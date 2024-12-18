@@ -1,0 +1,91 @@
+:root {
+  --color-dark-green: #464a31;
+  --color-muted-green: #99a285;
+  --color-warm-brown: #904b2a;
+  --color-light-gray: #f5f5f5;
+  --color-dark-gray: #333333;
+}
+
+:root {
+  --font-1:
+  --font-2:
+  --font-3:
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--color-dark-gray);
+  background-color: var(--color-dark-gray);
+}
+
+/* HEADER */
+
+.site-header {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem;
+  background-color: var(--color-dark-gray);
+  max-width: 1600px;
+  border-bottom: 1px solid white;
+  height: 100px;
+}
+
+/* TITLE */
+
+.site-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* MAIN NAV BAR */
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.main-nav ul li a {
+  display: flex;
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  padding: 0 2rem;
+  height: 100%;
+}
+
+/* CONTACT BUTTON */
+
+.contact-button {
+  background-color: white;
+  color: var(--color-dark-gray);
+  padding: 0.8rem 2rem;
+  border-radius: 40px;
+}
+
+/* SOCIAL LINKS */
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* CONTACT BUTTON */
+
+/* FOOTER */
