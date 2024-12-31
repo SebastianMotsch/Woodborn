@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woodborn</title>
+    <link rel="stylesheet" href="css/gallery.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header class="header">
+
+      <h1 class="title">WOODBORN.</h1>
+      
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="gallery.html" class="active">GALLERY</a></li>
+          <li><a href="articles.html">ARTICLES</a></li>
+          <li><a href="contact.html" class="contact">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <div class="social-icons">
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://maps.google.com" target="_blank" aria-label="Google Maps"><i class="fas fa-map-marker-alt"></i></a>
+      </div>
+
+    </header>
+      
+    <section class="gallery-hero">
+      <div class="hero-image">
+        <img src="images/gallery-feature1.jpg" alt="Gallery Hero">
+        <div class="hero-text">
+          <h1>Our Work</h1>
+          <p>Explore the finest carpentry projects we've completed over the years.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="gallery-navigation">
+      <div class="navigation-bar">
+        <span class="nav-item active">ALL</span>
+        <span class="divider">|</span>
+        <span class="nav-item">KITCHEN</span>
+        <span class="divider">|</span>
+        <span class="nav-item">FURNITURE</span>
+        <span class="divider">|</span>
+        <span class="nav-item">DECORATIONS</span>
+      </div>
+    </section>
+    
+    <section class="gallery-main">
+      <div class="gallery-grid">
+        <div class="gallery-item" data-index="0">
+          <img src="images/gallery-feature2.jpg" alt="Project 1">
+          <div class="item-overlay">
+            <h2>Kitchen Renovation</h2>
+            <p>Date: March 2023</p>
+            <p>Description: Modern design with custom cabinetry and marble finishes.</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-index="1">
+          <img src="images/gallery-feature2.jpg" alt="Project 2">
+          <div class="item-overlay">
+            <h2>Custom Bookshelf</h2>
+            <p>Date: January 2023</p>
+            <p>Description: A handmade oak bookshelf with adjustable shelving.</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-index="2">
+          <img src="images/gallery-feature3.jpg" alt="Project 3">
+          <div class="item-overlay">
+            <h2>Rustic Coffee Table</h2>
+            <p>Date: December 2022</p>
+            <p>Description: A reclaimed wood table with a natural finish.</p>
+          </div>
+        </div>
+        <!-- Add more gallery items as needed -->
+      </div>
+    </section>
+    
+    <!-- Full-Screen Viewer -->
+    <div class="fullscreen-viewer" id="fullscreen-viewer">
+      <div class="arrow left-arrow" id="left-arrow">&#9664;</div>
+      <img id="fullscreen-image" src="" alt="Fullscreen View">
+      <div class="arrow right-arrow" id="right-arrow">&#9654;</div>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2024 Woodborn. Rose Valley, PA.</p>
+    </footer>
+
+    <script src="fullscreen.js"></script>
+    
+  </body>
+
+</html>

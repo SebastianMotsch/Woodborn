@@ -7,12 +7,13 @@
     <title>Woodborn</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   </head>
 
   <body>
-
-    <div class="hero-image-wrapper">
       
+    <div class="hero-image">
+      <img src="images/placeholder-hero.jpg" alt="Hero Placeholder Image">
     </div>
 
     <header class="header">
@@ -21,11 +22,11 @@
       
       <nav class="main-nav">
         <ul>
-          <li><a href="#home">HOME</a></li>
-          <li><a href="#gallery">ABOUT</a></li>
-          <li><a href="#articles">GALLERY</a></li>
-          <li><a href="#careers">ARTICLES</a></li>
-          <li><a href="#contact" class="contact">CONTACT</a></li>
+          <li><a href="index.html" class="active">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="articles.html">ARTICLES</a></li>
+          <li><a href="contact.html" class="contact">CONTACT</a></li>
         </ul>
       </nav>
 
@@ -37,17 +38,85 @@
 
     </header>
 
-    <main>
-
-      <section id="about" class="section about-section"></section>
-
+    <main class="main-content-section">
+      <div class="main-content">
+        <img src="images/woodborn-letters.png" alt="Woodborn Logo" class="company-logo1">
+        <img src="images/woodborn-letters1.png" alt="Woodborn Logo" class="company-logo2">
+        <p>Etiam mi lobortis amet sit tristique quisque id nunc eu consectetur <br> velit diam mi donec eu nunc laoreet cras vel tempor in felis.</p>
+        <div class="buttons">
+          <button class="quote-btn">GET A QUOTE</button>
+          <button class="learn-more-btn">LEARN MORE</button>
+        </div>
+      </div>
     </main>
 
-    <footer class="footer">
-      <p>&copy; 2024 Woodborn. Built with craftsmanship in Rose Valley, PA.</p>
-    </footer>
+    <section class="gallery-section">
+      <div class="gallery-container">
+        <div class="gallery-left">
+          <div class="gallery-text">
+            <p class="dash">---- GALLERY</p>
+            <h1>Take a look at our <br> recent projects</h1>
+            <p class="description">
+              Nunc pellentesque aliquam leo leo ipsum tellus elit et adipiscing <br> mauris
+              laoreet sed turpis in purus turpis in lectus amet nisl.
+            </p>
+          </div>
+          <div class="gallery-image">
+            <img src="images/gallery-feature2.jpg" alt="Project 2">
+          </div>
+        </div>
+        <div class="gallery-right">
+          <div class="gallery-image">
+            <img src="images/gallery-feature1.jpg" alt="Project 1">
+          </div>
+          <div class="gallery-image tall">
+            <img src="images/gallery-feature3.jpg" alt="Project 3">
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <section class="contact-section">
+      <div class="contact-content">
+        <div class="contact-form">
+          <h2>Contact Us</h2>
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Write your message" rows="5" required></textarea>
+    
+            <button type="submit" class="submit-btn">Submit</button>
+          </form>
+        </div>
+    
+        <div class="contact-map">
+          <h2>Our Location & Hours</h2>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345086165!2d-122.40641758468105!3d37.78583497975817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064f252b391%3A0xf03c9e2915547b6d!2sYour%20Warehouse%20Location!5e0!3m2!1sen!2sus!4v1234567890!5m2!1sen!2sus"
+              width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="contact-info">
+            <p><strong>Warehouse Location:</strong> 1234 Main Street, Rose Valley, PA</p>
+            <p><strong>Hours:</strong> Mon-Fri: 9:00 AM - 5:00 PM</p>
+            <p><strong>Email:</strong> contact@woodborn.com</p>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2024 Woodborn. Rose Valley, PA.</p>
+    </footer>
     
   </body>
 
